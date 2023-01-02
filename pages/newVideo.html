@@ -28,7 +28,38 @@
             <h1>Upload New Video</h1>
 
            
-              
+            <section>
+              <label for="videoTitle">Video Title</label>
+              <br>
+              <input id="videoTitle"  name="videoTitle" type="text" placeholder="Input value"/>
+              <br>
+              <label for="description">Description</label>
+              <br>
+              <textarea id="description" rows="6" cols="40">
+               Text area content
+              </textarea>
+              <br>
+              <label for="video">Video</label>
+              <br>
+              <button>Choose File</button>
+              <br>
+              <input list="category" name="category" placeholder="Choose Category"/>
+              <datalist id="category" >
+                  <option value="Funny Animals">Funny Animals</option>
+                  <option value="DIY Projects">DIY Projects</option>
+                  <option value="Tasty Recipes">Tasty Recipes</option>
+                
+              </datalist>
+              <br>
+
+              <input name="privacy" id="public" type="radio"/>
+              <label for="public">Public</label>
+              <input name="privacy" id="private" type="radio"/>
+              <label for="private">Private</label>
+              <br>
+              <button>Upload Video</button>
+
+            </section> 
             
         </header>
     </main>
