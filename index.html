@@ -3,16 +3,43 @@
   <head>
     <meta charset="utf-8" content="width=device-width, initial-scale=1.0" />
     <title>MyTube</title>
-
-    <style>
-      section div {
-        height: 350px;
-        width: 350px;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css">
+   
+   
   </head>
 <body>
-    
+
+  <section class=" section1 flex flex-between relative flex-center">
+    <div class="flex flex-center ">
+      <div class="menu-padding">
+        <image class="contain" src="https://banner2.cleanpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg" alt="menu-icon" />
+      </div>
+      <div class="left-nav">
+        
+        <div class="  logo-text">
+          MyTube
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-center">
+      <div class="flex search-border flex-center">
+        <div class="">
+          <input class="search-input" type="text" placeholder="Search..." />
+
+        </div>
+        <div class="">
+          <img class="search-icon" src="https://static.vecteezy.com/system/resources/thumbnails/000/439/746/small/Basic_Ui__28101_29.jpg" alt="magnifying glass" />
+        </div>
+      </div>
+      <div class="mic-border">
+        <image class="mic" src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png" alt="mic" /></div>
+    </div>
+    <div class="flex flex-end ">
+      <div>settings gear</div>
+      <div>login/logout</div>
+    </div>
+  </section>
+  <hr>  
     <nav>
         <a href="./index.html">Home</a>|
         <a href="./pages/funnyAnimals.html">Funny Animals</a>|
@@ -23,25 +50,37 @@
     <hr>
 
     <main>
-        <header>
-            <h1>Featured</h1>
+      <header>
+        <h1>Featured</h1>
+      </header>
 
             <section>
-              <div>
-                <h3>Funny Animals</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JACWuH81K6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-              </div>
-              <div>
-                <h3>DIY Projects</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XWkUl-HVgZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-              </div>
-              <div>
-                <h3>Tasty Recipes</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OjsCEJ8CWlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-              </div>
-              
+              <table>
+                <tr>
+                  <td>
+                    <div>
+                      <h2>Funny Animals</h2>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JACWuH81K6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                    </div>
+                    
+                  </td>
+                  <td>
+                    <div>
+                      <h2>DIY Projects</h2>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/XWkUl-HVgZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                    </div>
+
+                  </td>
+                  <td>
+                    <div>
+                      <h2>Tasty Recipes</h2>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/OjsCEJ8CWlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
             </section>
-        </header>
     </main>
     <hr>
     <footer>&copy: Copyright</footer>
