@@ -5,6 +5,7 @@
     <meta charset="utf-8" content="width=device-width, initial-scale=1.0" />
     <title>MyTube</title>
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/newVideo.css">
 
    
   </head>
@@ -16,11 +17,11 @@
       </div>
       <div class="logo-text">MyTube</div>
     </div>
+
     <div class="flex search-container">
       <div class="flex search-border flex-center">
         <div class="">
           <input class="search-input" type="text" placeholder="Search..." />
-
         </div>
         <div class="search-icon-container flex flex-center">
           <img class="search-icon " src="https://cdn-icons-png.flaticon.com/512/49/49116.png" alt="magnifying glass" />
@@ -29,6 +30,7 @@
       <div class="mic-container ">
         <image class="mic " src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png" alt="mic" /></div>
     </div>
+
     <div class="flex flex-center ">
       <div >
         <image class="settings-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Settings_app_icon.png/640px-Windows_Settings_app_icon.png" alt="settings" />
@@ -39,65 +41,73 @@
     </div>
   </section>
   <hr>
-  <nav>
+  <nav class="flex flex-center">
     <a href="../index.html">Home</a>|
     <a href="./funnyAnimals.html">Funny Animals</a>|
     <a href="./diyProjects.html">DIY Projects</a>|
     <a href="./tastyRecipes.html">Tasty Recipes</a>|
     <a href="./newVideo.html">Post Video</a>
-</nav></br>
+</nav>
 <hr>
 
     <main>
-        <header>
+        <header >
             <h1>Upload New Video</h1>
-          
-            <section>
-              <form action="" name="formUploadVideo" method="post">
-                <label for="videoTitle">Video Title</label>
-                <br>
-                <input id="videoTitle"  name="videoTitle" type="text" placeholder="Input value"/>
-                <br>
-                <br>
-
-                <label for="description">Description</label>
-                <br>
-                <textarea id="description" rows="6" cols="40">
-                 Text area content
-                </textarea>
-                <br>
-                <br>
-
-                <label for="video">Video</label>
-                <br>
-                <button id="video" name="video">Choose File</button>
-                <br>
-                <br>
-
-                <input list="category" name="category" placeholder="Choose Category"/>
-                <datalist id="category" >
-                    <option value="Funny Animals">Funny Animals</option>
-                    <option value="DIY Projects">DIY Projects</option>
-                    <option value="Tasty Recipes">Tasty Recipes</option>
-                  
-                </datalist>
-                <br>
-                <br>
-
-                <input name="privacy" id="public" type="radio"/>
-                <label for="public">Public</label>
-                <input name="privacy" id="private" type="radio"/>
-                <label for="private">Private</label>
-                <br>
-                <br>
-
-                <button name="uploadVideo">Upload Video</button>
-                <br>
-                <br>
-
-              </form>
-            </section> 
         </header>
+          
+        <div class="flex flex-around">
+          <section class="section2">
+            <form action="" name="formUploadVideo" method="post">
+              <label for="videoTitle">Video Title</label>
+              <br>
+              <input id="videoTitle"  name="videoTitle" type="text" placeholder="Input value"/>
+              <br>
+              <br>
+
+              <label for="description">Description</label>
+              <br>
+              <textarea id="description" rows="6" cols="40">
+               Text area content
+              </textarea>
+              <br>
+              <br>
+
+              <label for="video">Video</label>
+              <br>
+              <button id="video" name="video">Choose File</button>
+              <br>
+              <br>
+
+              <input list="category" name="category" placeholder="Choose Category"/>
+              <datalist id="category" >
+                  <option value="Funny Animals">Funny Animals</option>
+                  <option value="DIY Projects">DIY Projects</option>
+                  <option value="Tasty Recipes">Tasty Recipes</option>
+                
+              </datalist>
+              <br>
+              <br>
+
+              <input name="privacy" id="public" type="radio"/>
+              <label for="public">Public</label>
+              <input name="privacy" id="private" type="radio"/>
+              <label for="private">Private</label>
+              <br>
+              <br>
+
+              <button name="uploadVideo">Upload Video</button>
+              <br>
+              <br>
+
+            </form>
+          </section> 
+
+          <section class="section2">
+            <image class="upload-icon " src="https://cdn2.iconfinder.com/data/icons/video-12/32/Video-camera-add-512.png"  alt="upload video"/>
+
+            <h2>BE THE NEXT VIRAL VIDEO! 😎</h2>
+          </section>
+        </div>
     </main>
     <hr>
     <footer>&copy: Copyright</footer>
