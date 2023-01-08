@@ -10,3 +10,9 @@ header {
   height: 256px;
   width: 256px;
 }
+
+label {
+  background: #e1e5ea;
+  border-radius: 50px;
+  padding: 3px 8px;
+}
