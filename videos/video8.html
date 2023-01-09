@@ -4,34 +4,76 @@
   <head>
     <meta charset="utf-8" content="width=device-width, initial-scale=1.0" />
     <title>MyTube</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/video.css">
 
-    <style>
-      section div {
-        height: 350px;
-        width: 350px;
-      }
-    </style>
+  
   </head>
 <body>
-    
-    <nav>
-        <a href="../index.html">Home</a>|
-        <a href="../pages/funnyAnimals.html">Funny Animals</a>|
-        <a href="../pages/diyProjects.html">DIY Projects</a>|
-        <a href="../pages/tastyRecipes.html">Tasty Recipes</a>|
-        <a href="../pages/newVideo.html">Post Video</a>
-    </nav></br>
-    <hr>
+  <section class=" section1 flex flex-between relative flex-center">
+    <div class="flex flex-center ">
+      <div class="">
+        <image class="menu-icon" src="https://banner2.cleanpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg" alt="menu-icon" />
+      </div>
+      <div class="logo-text"><a id="logo-text" class="center-nav logo-text"  href="../index.html">MyTube</a></div>
+    </div>
+
+    <div class="flex search-container">
+      <div class="flex search-border flex-center">
+        <div class="">
+          <input class="search-input" type="text" placeholder="Search..." />
+        </div>
+        <div class="search-icon-container flex flex-center">
+          <img class="search-icon " src="https://cdn-icons-png.flaticon.com/512/49/49116.png" alt="magnifying glass" />
+        </div>
+      </div>
+      <div class="mic-container ">
+        <image class="mic " src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png" alt="mic" /></div>
+    </div>
+
+    <div class="flex flex-center ">
+      <div >
+        <image class="settings-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Settings_app_icon.png/640px-Windows_Settings_app_icon.png" alt="settings" />
+      </div>
+      <div >
+        <image class="avatar-icon" src="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png" alt="avatar" />
+      </div>
+    </div>
+  </section>
+  <hr> 
+
+  <nav class="flex flex-center">
+    <a href="../pages/funnyAnimals.html">Funny Animals</a>|
+    <a href="../pages/diyProjects.html">DIY Projects</a>|
+    <a href="../index.html">Home</a>|
+    <a href="../pages/tastyRecipes.html">Tasty Recipes</a>|
+    <a href="../pages/newVideo.html">Post Video</a>
+  </nav>
+  <hr>
 
     <main>
-        <header>
-            <h1>30 Easy DIY Projects For Beginners That Increase Your Home Value</h1>
+      <header>
+          <h1>30 Easy DIY Projects For Beginners That Increase Your Home Value</h1>
+      </header>
 
-            <section>
-              
-              
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/2G5f_LpdLh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <br>
+      <section>
+        <table class="center">
+          <tr>
+            <td>
+              <div class="selected-video padding-bottom">     
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2G5f_LpdLh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </td>
+            <td>
+              <div class="uploadAnim">
+                <image class="upload-icon " src="https://cdn.pixabay.com/photo/2017/09/16/09/55/panda-2755019_960_720.png"  alt="sunn smiling"/>
+              </div>
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <div class="selected-video">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                   molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                   numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
@@ -53,12 +95,16 @@
                   modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
                   totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
                   quasi aliquam eligendi, placeat qui corporis!</p>
-            </section>
-        </header>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
     </main>
     <hr>
     <footer>&copy: Copyright</footer>
-
   </body>
 </html>
+
+
 
