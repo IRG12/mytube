@@ -37,6 +37,10 @@ body {
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-start {
   justify-content: flex-start;
 }
@@ -58,8 +62,54 @@ body {
   justify-content: space-around;
 }
 
+.menu-logo {
+  animation: menuLogoAnim 2s ease 0s 1 alternate forwards;
+}
+
+@keyframes menuLogoAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.search {
+  animation: searchAnim 2s ease 0s 1 alternate forwards;
+}
+
+@keyframes searchAnim {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.settings-profile {
+  animation: settingsProfileAnim 2s ease 0s 1 alternate forwards;
+}
+
+@keyframes settingsProfileAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .left-nav {
-  animation: leftAnim 2s ease 0s 3 normal forwards;
+  animation: leftAnim 2s ease 1s 2 normal forwards;
 }
 
 @keyframes leftAnim {
@@ -91,7 +141,7 @@ body {
 }
 
 .right-nav {
-  animation: rightAnim 2s ease 0s 3 normal forwards;
+  animation: rightAnim 2s ease 1s 2 normal forwards;
 }
 
 @keyframes rightAnim {
@@ -123,7 +173,7 @@ body {
 }
 
 .middle-nav {
-  animation: middleAnim 2s ease 0s 3 normal forwards;
+  animation: middleAnim 2s ease 1s 2 normal forwards;
 }
 
 @keyframes middleAnim {
@@ -157,52 +207,16 @@ body {
 }
 
 .center-nav {
-  animation: topAnim 2s ease 0s 3 alternate forwards;
+  animation: topAnim 4s ease 0s 1 alternate forwards;
 }
 
 @keyframes topAnim {
   0% {
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateY(45px);
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  40% {
-    animation-timing-function: ease-in;
-    transform: translateY(24px);
-  }
-
-  65% {
-    animation-timing-function: ease-in;
-    transform: translateY(12px);
-  }
-
-  82% {
-    animation-timing-function: ease-in;
-    transform: translateY(6px);
-  }
-
-  93% {
-    animation-timing-function: ease-in;
-    transform: translateY(4px);
-  }
-
-  25%,
-  55%,
-  75%,
-  87% {
-    animation-timing-function: ease-out;
-    transform: translateY(0px);
+    transform: scale(0);
   }
 
   100% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0px);
+    transform: scale(1);
   }
 }
 
@@ -345,7 +359,6 @@ h3 {
 
 .homepage-h3 {
   color: black;
-  margin: 0px 25px;
   background: #e1e5ea;
   border-radius: 50px;
   padding: 3px 8px;
