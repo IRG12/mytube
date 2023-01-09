@@ -58,32 +58,39 @@
         <div class="flex flex-around ">
           <section class=" border-dash ">
             <form class="flex flex-col flex-center"  action="" name="formUploadVideo" method="post">
-              <div class="flex-col flex-center">
-                <label for="videoTitle">Video Title</label>
-                <br>
-                <input id="videoTitle"  name="videoTitle" type="text" placeholder="Input value"/>
-                <br>
-                <br>
-                <br>
-              </div>
-
-              <div class="flex-center">
-                <label for="description">Description</label>
-                <br>
-                <textarea id="description" rows="6" cols="40">
-                 Text area content
-                </textarea>
+              <div class="flex-col flex-center flex">
+                <div class="flex-grow">
+                  <label class="text-center" for="videoTitle">Video Title</label>
+                </div>
+                <div>
+                  <input id="videoTitle"  name="videoTitle" type="text" placeholder="Input value"/>
+                </div>
                 <br>
                 <br>
                 <br>
               </div>
 
-              <div class="flex-center">
-                <label for="video">Video</label>
+              <div class="flex-center flex flex-col">
+                <div class="flex-grow">
+                  <label class="text-center" for="description">Description</label>
+                </div>
+                <div>
+                  <textarea id="description" rows="6" cols="40">
+                    Text area content
+                  </textarea>
+                </div>
                 <br>
-                <button id="video" name="video">Choose File</button>
                 <br>
                 <br>
+              </div>
+
+              <div class="flex-center flex flex-col">
+                <div class="flex-grow">
+                  <label class="text-center" for="video">Video</label>
+                </div>
+                <div>
+                  <button id="video" name="video">Choose File</button>
+                </div>
                 <br>
               </div>
 
@@ -113,15 +120,12 @@
               <div class="flex-center">
                 <button name="uploadVideo">Upload Video</button>
               </div>
-              
-
+            
             </form>
           </section> 
 
           <section class=" uploadAnim">
             <image class="upload-icon " src="https://cdn2.iconfinder.com/data/icons/video-12/32/Video-camera-add-512.png"  alt="upload video"/>
-
-            
           </section>
         </div>
     </main>

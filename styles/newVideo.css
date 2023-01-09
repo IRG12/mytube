@@ -53,3 +53,11 @@ label {
 .border-dash {
   border: 4px dashed black;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
