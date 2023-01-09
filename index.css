@@ -248,6 +248,21 @@ body {
   font-family: "Press Start 2P", Calibri, Trebuchet MS, sans-serif;
 }
 
+#logo-text:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(253, 228, 29, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding-left: 25px;
+  font-family: "Press Start 2P", Calibri, Trebuchet MS, sans-serif;
+}
+
 .relative {
   position: relative;
 }
