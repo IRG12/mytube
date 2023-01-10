@@ -3,6 +3,7 @@
   animation: uploadIconAnim 2s ease 10s 10 normal forwards;
 }
 
+/* Wobble icon */
 @keyframes uploadIconAnim {
   0%,
   100% {

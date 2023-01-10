@@ -3,6 +3,7 @@ table.center {
   margin-right: auto;
 }
 
+/* h3 truncating */
 h3 {
   width: 420px;
   white-space: nowrap;
