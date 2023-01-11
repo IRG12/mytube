@@ -1,3 +1,4 @@
+/* --------------------------Beginning of index.html----------------------------- */
 /* body */
 /*  */
 
@@ -392,8 +393,8 @@ td {
   padding: 0px 20px;
 }
 
-/* Box shadow glow effect */
-iframe {
+/* Box shadow yellow glow effect */
+iframe.glow-blue {
   -webkit-box-shadow: 0px 0px 100px 20px rgba(205, 230, 12, 1);
   -moz-box-shadow: 0px 0px 100px 20px rgba(205, 230, 12, 1);
   box-shadow: 0px 0px 100px 20px rgba(205, 230, 12, 1);
@@ -410,3 +411,21 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/*-------------------------- End of index.html------------------------------  */
+
+/*-------------------------- Beginning of diyProjects.html & tastyRecipes.html------------------------------  */
+
+/* h3 truncating for long text descriptions */
+h3 {
+  width: 420px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*-------------------------- End of diyProjects.html & tastyRecipes.html------------------------------  */
+
+/*-------------------------- Beginning of newVideo.html------------------------------  */
+
+/*-------------------------- End of newVideo.html------------------------------  */
