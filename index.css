@@ -266,7 +266,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
-  padding-left: 25px;
   font-family: "Press Start 2P", Calibri, Trebuchet MS, sans-serif;
 }
 
@@ -413,7 +412,6 @@ footer {
 }
 
 /*-------------------------- End of index.html------------------------------  */
-
 /*-------------------------- Beginning of diyProjects.html & tastyRecipes.html------------------------------  */
 
 /* h3 truncating for long text descriptions */
@@ -425,7 +423,96 @@ h3 {
 }
 
 /*-------------------------- End of diyProjects.html & tastyRecipes.html------------------------------  */
-
 /*-------------------------- Beginning of newVideo.html------------------------------  */
+.upload-header {
+  margin-left: 75px;
+}
 
+.upload-form {
+  padding: 10px;
+}
+
+.upload-icon {
+  height: 256px;
+  width: 256px;
+}
+
+label {
+  background: #e1e5ea;
+  border-radius: 50px;
+  padding: 3px 8px;
+}
+
+.border-dash {
+  border: 4px dashed black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
 /*-------------------------- End of newVideo.html------------------------------  */
+/*-------------------------- Beginning of video.html------------------------------  */
+.header-h1 {
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+.selected-video {
+  margin-left: 60px;
+}
+
+/* Box shadow glow effect */
+iframe.glow-blue {
+  -webkit-box-shadow: 0px 0px 105px 30px rgba(0, 187, 255, 0.7);
+  -moz-box-shadow: 0px 0px 105px 30px rgba(0, 187, 255, 0.7);
+  box-shadow: 0px 0px 105px 30px rgba(0, 187, 255, 0.7);
+}
+
+.upload-icon {
+  height: 256px;
+  width: 256px;
+}
+
+.uploadAnim {
+  animation: uploadIconAnim 2s ease 10s 10 normal forwards;
+  margin-right: 250px;
+}
+
+/* Wobble icon */
+@keyframes uploadIconAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+/*-------------------------- End of video.html------------------------------  */
